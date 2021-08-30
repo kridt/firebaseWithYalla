@@ -10,6 +10,18 @@ export default function Dashboard() {
 
   
   
+    
+      /* function displayNotification() {
+        if (Notification.permission === 'granted') {
+          navigator.serviceWorker.getRegistration().then(function(reg) {
+            reg.showNotification('Suuup, just an notification', {
+              vibrate: [200, 100, 200, 100, 200]
+            });
+          });
+        }
+      } */
+    
+  
 
   async function handleLogout() {
     setError("")
