@@ -10,18 +10,6 @@ export default function Dashboard() {
 
   
   
-    
-      function displayNotification() {
-        if (Notification.permission === 'granted') {
-          navigator.serviceWorker.getRegistration().then(function(reg) {
-            reg.showNotification('Suuup, just an notification', {
-              vibrate: [200, 100, 200, 100, 200]
-            });
-          });
-        }
-      }
-    
-  
 
   async function handleLogout() {
     setError("")
@@ -50,7 +38,6 @@ export default function Dashboard() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        <Button onClick={displayNotification}>Notifikation</Button>
         <Button variant="link" onClick={handleLogout}>
           Log Ud
         </Button>
