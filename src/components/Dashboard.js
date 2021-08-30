@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   
   
-    function test() {
+    
       function displayNotification() {
         if (Notification.permission === 'granted') {
           navigator.serviceWorker.getRegistration().then(function(reg) {
@@ -20,10 +20,8 @@ export default function Dashboard() {
           });
         }
       }
-    }
+    
   
-
-  console.log(personalData);
 
   async function handleLogout() {
     setError("")
@@ -52,7 +50,7 @@ export default function Dashboard() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        <Button onClick={test}>Test</Button>
+        <Button onClick={displayNotification}>Notifikation</Button>
         <Button variant="link" onClick={handleLogout}>
           Log Ud
         </Button>
