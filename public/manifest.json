@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Yalla Yalla Foods",
+  "name": "Yalla Yalla Foods",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://www.yallayallafoods.dk/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
