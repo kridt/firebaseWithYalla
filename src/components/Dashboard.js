@@ -13,8 +13,15 @@ export default function Dashboard() {
   
   
     function test() {
-      axios.get("https://yalla-auth-production-default-rtdb.europe-west1.firebasedatabase.app/")
-      .then((response)=> setPersonalData(response))
+      function displayNotification() {
+        if (Notification.permission === 'granted') {
+          navigator.serviceWorker.getRegistration().then(function(reg) {
+            reg.showNotification('Suuup, just an notification', {
+              vibrate: [200, 100, 200, 100, 200]
+            });
+          });
+        }
+      }
     }
   
 

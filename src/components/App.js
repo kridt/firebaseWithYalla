@@ -10,6 +10,11 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 
 function App() {
+
+  Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+  });
+
   return (
     <Container
       className="d-flex align-items-center justify-content-center"
