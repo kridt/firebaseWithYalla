@@ -26,8 +26,21 @@ export default function Login() {
     setLoading(false)
   }
 
+  function displayNotification() {
+    if (Notification.permission === 'granted') {
+      navigator.serviceWorker.getRegistration().then(function(reg) {
+        reg.showNotification('Suuup, just an notification', {
+          vibrate: [200, 100, 200, 100, 200]
+        });
+      });
+    }
+  }
+
   return (
     <>
+      <p>Taaak for du ville hjælpe Bianca  &gt;3</p>
+      <Button onClick={displayNotification}>Tyk her</Button>
+
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Log Ind</h2>
