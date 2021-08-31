@@ -32,13 +32,14 @@ export default function Login() {
         reg.showNotification('Suuup, just an notification', {
           vibrate: [200, 100, 200, 100, 200]
         });
+      console.log("Notification Sent!");
       });
     }
   }
 
   return (
     <>
-      <p>Taaak for du ville hjælpe Bianca  &gt;3</p>
+      <p>Taaak for du ville hjælpe Bianca  &lt;3</p>
       <Button onClick={displayNotification}>Tyk her</Button>
 
       <Card>
