@@ -10,7 +10,7 @@ export default function Dashboard() {
   const history = useHistory()
   const admin = false
   
-  
+  console.log(admin);
     
       /* function displayNotification() {
         if (Notification.permission === 'granted') {
