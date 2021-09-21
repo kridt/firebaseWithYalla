@@ -3,6 +3,7 @@ import { Card, Button, Alert } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
+
 export default function Dashboard() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
@@ -28,13 +29,13 @@ export default function Dashboard() {
 
     try {
       await logout()
-      history.push("/login")
+      history.push("/")
     } catch {
       setError("Failed to log out")
     }
   }
   
-
+console.log(currentUser);
 
 
   return (
@@ -43,7 +44,8 @@ export default function Dashboard() {
         <Card.Body>
           <h2 className="text-center mb-4">Profil</h2>
           {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Email:</strong> {currentUser.email}
+         <div><strong>Email:</strong> {currentUser.email}</div>
+          <strong>User ID:</strong> {currentUser.uid}
           <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
             Opdater Profil
           </Link>

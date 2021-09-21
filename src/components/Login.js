@@ -18,7 +18,7 @@ export default function Login() {
       setError("")
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
-      history.push("/")
+      history.push("/dashboard")
     } catch {
       setError("Failed to log in")
     }
@@ -39,8 +39,7 @@ export default function Login() {
 
   return (
     <>
-      <p>Taaak for du ville hjælpe Bianca  &lt;3</p>
-      <Button onClick={displayNotification}>Tyk her</Button>
+    
 
       <Card>
         <Card.Body>
