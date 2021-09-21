@@ -8,8 +8,8 @@ export default function Dashboard() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
   const history = useHistory()
-  const admin = false
-  
+  const admin = false;
+  console.log(admin);
   
     
       /* function displayNotification() {
