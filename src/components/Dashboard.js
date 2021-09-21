@@ -8,7 +8,7 @@ export default function Dashboard() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
   const history = useHistory()
-
+  const admin = false
   
   
     
@@ -35,7 +35,6 @@ export default function Dashboard() {
     }
   }
   
-console.log(currentUser);
 
 
   return (
