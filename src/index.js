@@ -19,9 +19,4 @@ ReactDOM.render(
       console.log('ServiceWorker registration failed: ', err);
     });
   });
-<<<<<<< HEAD
 } */
-=======
-}
- */
->>>>>>> 667ad5e8fe66e5c2b743ff8cb1b881abda864106
