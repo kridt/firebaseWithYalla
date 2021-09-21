@@ -26,7 +26,7 @@ export default function Login() {
     setLoading(false)
   }
 
-  function displayNotification() {
+  /* function displayNotification() {
     if (Notification.permission === 'granted') {
       navigator.serviceWorker.getRegistration().then(function(reg) {
         reg.showNotification('Suuup, just an notification', {
@@ -35,7 +35,7 @@ export default function Login() {
       console.log("Notification Sent!");
       });
     }
-  }
+  } */
 
   return (
     <>
