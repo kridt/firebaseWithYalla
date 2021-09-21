@@ -11,9 +11,8 @@ export default function Dashboard() {
   const admin = false;
   console.log(admin);
   
-  const admin = false
+
   
-  console.log(admin);
     
       /* function displayNotification() {
         if (Notification.permission === 'granted') {
