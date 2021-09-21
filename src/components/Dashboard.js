@@ -8,9 +8,15 @@ export default function Dashboard() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
   const history = useHistory()
+<<<<<<< HEAD
   const admin = false;
   console.log(admin);
   
+=======
+  const admin = false
+  
+  console.log(admin);
+>>>>>>> 667ad5e8fe66e5c2b743ff8cb1b881abda864106
     
       /* function displayNotification() {
         if (Notification.permission === 'granted') {
