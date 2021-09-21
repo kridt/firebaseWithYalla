@@ -49,7 +49,7 @@ console.log(currentUser);
           <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
             Opdater Profil
           </Link>
-        </Card.Body>
+        </Card.Body> 
       </Card>
       <div className="w-100 text-center mt-2">
         <Button variant="link" onClick={handleLogout}>
