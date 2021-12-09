@@ -54,6 +54,10 @@ export default function Login() {
               <Form.Label>Adgangskode</Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
+            <div>
+              <label>Forbliv logget ind </label>
+              <input type="checkbox" />
+            </div>
             <Button disabled={loading} className="w-100" type="submit">
               Log Ind
             </Button>
